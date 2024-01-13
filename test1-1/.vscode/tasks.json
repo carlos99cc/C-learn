@@ -1,0 +1,30 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "D:\\Profession App Data\\VScode\\mingw64\\bin\\g++.exe",
+            "args": [
+                //"-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\source\\*.cpp",
+                "-I","${workspaceFolder}\\include",
+                "-o",
+                "${workspaceFolder}\\out\\${fileBasenameNoExtension}.exe"
+                
+            ],
+            "options": {
+                "cwd": "D:\\Profession App Data\\VScode\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
