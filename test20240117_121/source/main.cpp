@@ -50,6 +50,15 @@ Persion operator+(Persion &p1,Persion &p2)
       temp.m_b = p1.m_b + p2.m_b;
       return temp;
 }
+
+Persion operator+(Persion &p1,int num)//运算符+的重载
+{
+      Persion temp;
+      temp.m_a = p1.m_a + num;
+      temp.m_b = p1.m_b + num;
+      return temp;
+}
+
 void test()
 {
    Persion p1;
@@ -60,9 +69,12 @@ void test()
    cout<<"p1.m_b = "<<p1.m_b<<endl;
    cout<<"p2.m_a = "<<p2.m_a<<endl;
    cout<<"p2.m_b = "<<p2.m_b<<endl;
-   Persion p3 = p1+p2;//等价于 Persion p3 = p1.operator+(p2)
+   Persion p3 = p1+p2;//等价于 Persion p3 = p1.operator+(p2)//Persion p3 = operator+(p1,p2)
    cout<<"p3.m_a = "<<p3.m_a<<endl;
    cout<<"p3.m_b = "<<p3.m_b<<endl;
+   Persion p4 = p1+100;//等价于 Persion p3 = p1.operator+(p2)//Persion p3 = operator+(p1,p2)
+   cout<<"p3.m_a = "<<p4.m_a<<endl;
+   cout<<"p3.m_b = "<<p4.m_b<<endl;
 }
 
 int main()
