@@ -7,6 +7,8 @@ class Basepage
 {
 
 public:
+int m_a;
+int m_c;
    Basepage(/* args */);
    ~Basepage();
    void header()
@@ -31,6 +33,7 @@ class cpp : public Basepage
 {
 
 public:
+int m_b;
    cpp(/* args */);
    ~cpp();
    void content()
