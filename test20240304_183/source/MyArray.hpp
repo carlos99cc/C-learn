@@ -1,7 +1,14 @@
 #pragma once
 #include<iostream>
 using namespace std;
-
+// 要求：
+// 1. 对内置数据类类型以及自定义数据类型的数据进行存储
+// 2. 数组中数据储存在堆区
+// 3. 构造函数可以传入数组容量
+// 4. 提供拷贝构造和operator=防止浅拷贝
+// 5. 提供尾插法和尾减法对数组进行增加和删减
+// 6. 通过下标访问数组中元素
+// 7. 获取数组中当前元素个数和容量
 //通用数组类
 template<class T>
 class MyArray
